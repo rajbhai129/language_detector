@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Detect Language from Your Text</h1>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form action="/submit" method="POST">
+                    <input type="text" name="input-text" placeholder="Enter text here..." required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="result-container">
+                <h2>Your Text's Language:</h2>
+                <p class="language-result"><%= language ? language : "No language detected yet." %></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created and Developed by Rajkumar Bairwa</p>
+        </footer>
+    </div>
+</body>
+
+</html>

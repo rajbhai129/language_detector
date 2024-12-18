@@ -1,0 +1,121 @@
+/* main.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: hidden;
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);}
+  50% {background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);}
+  100% {background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);}
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.form-container {
+  margin-bottom: 30px;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-container input[type="text"]:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.form-container button {
+  background: #3498db;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.result-container h2 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.language-result {
+  font-size: 22px;
+  font-weight: 500;
+  color: #27ae60;
+  animation: fadeIn 3s ease-in-out;
+}
+
+footer p {
+  font-size: 14px;
+  color: #95a5a6;
+  margin-top: 30px;
+  animation: fadeInUp 3s ease-in-out;
+}
